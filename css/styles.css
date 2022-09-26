@@ -5,18 +5,17 @@
     
 }
 body{
+    height: 100%;
    margin: 0px;
 }
 .principal{
-    min-height: 1000px;
-    height: 100%;
-    background-color:beige;
+    height: 100vh;
+    
+    /*background-color:beige;*/
 	background-image: url(../images/legologo.png);
-	background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-color: rgba(245,245,220,0.9); background-blend-mode: lighten;
+	/*background-repeat:no-repeat;background-size:cover;background-attachment:fixed;*/background-color: rgba(245,245,220,0.9);background-blend-mode: lighten;
     width: 75%;
-    display:block;
-	align-items:center;
-	float:left;
+    float: left;
     
 }
 .secundario h1{
@@ -24,10 +23,11 @@ body{
 }
 .secundario{
     background-image: url(../images/cochecito.jfif);
-	background-size:cover;background-color: rgba(245,245,220,0.9); background-blend-mode: lighten;
-    min-height: 1000px;
+	background-size:contain;background-color: rgba(245,245,220,0.9); background-blend-mode: lighten;
+    height: 100vh;
     margin-block-start: -0;
-    height: 100%;
+    width: 25%;
+    float: right;
     
 }
 .secundario li{
