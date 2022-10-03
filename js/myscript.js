@@ -223,7 +223,7 @@ switch (new Date().getDay()) {
 //FECHA
 
 let today = new Date();
-let first_october = new Date(2022, 9 , 1);
+let first_october = new Date(2022, 9, 1);
 console.log(today);
 console.log(first_october);
 console.log(today.getDay());
@@ -251,20 +251,20 @@ switch (first_october.getDay()) {
         break;
 }
 
-if(today>first_october){
+if (today > first_october) {
     console.log("Today is after");
-}else{
+} else {
     console.log("Today is before");
 }
-function myFirstFunction(){
+function myFirstFunction() {
     console.log("Thank you for your click");
 }
-function mySecondFunction(){
+function mySecondFunction() {
     console.log("Thank you for your face,beauty");
 }
 
 //select dom
-
+/*
 var div=document.getElementById("my_div");
 var segundodiv=document.getElementById("my_second_div");
 div.classList.add("my_class");
@@ -305,3 +305,55 @@ console.log(n_elevator_2);
 
 var n_elevator_2 =numbers.map(n => n*n);
 console.log(n_elevator_2);
+
+let numbers = [[1, 2], [3, 4], [5, 6], [7, 8]];
+let itself = numbers.map(([x, y]) => x * y);
+console.log(itself);
+*/
+//create DOM nodes
+/*
+$("#btn2").addEventListener("click", function () {
+    var input = document.createElement("input");
+    console.log(input);
+
+
+});
+function $(selector) {
+    return document.querySelector(selector);
+}
+*/
+$("#btn2").addEventListener("click", function () {
+    var input = document.createElement("input");
+    input.setAttribute("type", "email");
+    input.setAttribute("placeholder", "E-mail");
+    input.setAttribute("name", "emails[]");
+    $("#form").appendChild(input);
+    myAlert("Add new email input");
+});
+function $(selector) {
+    return document.querySelector(selector);
+
+}
+function myAlert(msg){
+    var div=document.createElement("div");
+    div.classList.add("alert");
+    div.innerHTML =msg;
+    var close= document.createElement("span");
+    close.style.float="right";
+    close.classList.add("close");
+    close.innerHTML="X";
+    div.appendChild(close);
+    $("body").insertBefore(div,$("body").firstChild)
+    bind_close();
+}
+
+
+function bind_close(){
+    let elements= document.querySelectorAll(".close");
+    for(var i=elements.length-1;i>=0;i--){
+        let el= elements[i];
+        el.addEventListener("click",function(){
+            this.parentNode.style.display ="none";
+        });
+    }
+}
