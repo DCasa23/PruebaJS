@@ -262,3 +262,46 @@ function myFirstFunction(){
 function mySecondFunction(){
     console.log("Thank you for your face,beauty");
 }
+
+//select dom
+
+var div=document.getElementById("my_div");
+var segundodiv=document.getElementById("my_second_div");
+div.classList.add("my_class");
+segundodiv.classList.add("my_class");
+console.log(div);
+console.log(segundodiv);
+
+var div=document.getElementsByTagName("div");
+console.log(div);
+
+var second_div=document.querySelector("#my_second_div");
+console.log(second_div);
+
+function $(selector){
+    return document.querySelectorAll(selector);
+}
+console.log($("#my_third_div"));
+console.log($(".div_especial"));
+
+//funcion
+ function $(selector){
+    return  document.querySelectorAll(selector);
+}
+console.log($("#my_third_div"));
+
+var numbers=[1,2,3,4];
+
+var n_elevator_2=numbers.map(function(n){return n*n;})
+console.log(n_elevator_2);
+
+var n_elevator_2 = numbers.map((n) => {return n*n;})
+
+console.log(n_elevator_2);
+
+var n_elevator_2 = numbers.map((n) => {console.log(n+" "+n*n);return n*n;});
+
+console.log(n_elevator_2);
+
+var n_elevator_2 =numbers.map(n => n*n);
+console.log(n_elevator_2);
