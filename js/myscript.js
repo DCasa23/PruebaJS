@@ -142,6 +142,19 @@ let y=6;
 
 //for/forEach
 
+
+
 for(var i=0; i<fourth_array.length;i++){
     console.log("Entramos en la iteración "+ fourth_array[i]);
 }
+for(var i=fourth_array.length-1;i>=0;i--){
+    console.log("Second Iteration "+ fourth_array[i]);
+}
+var i= fourth_array.length-1;
+for(;i>=0;i--){
+    console.log("Third iteration  "+fourth_array[i]);
+}
+fourth_array.forEach(function(element){
+    console.log("Fourth "+element);
+
+});
