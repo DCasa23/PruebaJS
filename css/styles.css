@@ -3,21 +3,36 @@
 	margin-right:0px;
 	text-align:center;
     
+    font-weight: bold;
+    
 }
 body{
-    height: 100%;
-   margin: 0px;
-   padding: 0px;
-}
-.principal{
     height: 100vh;
+    background-color: rgb(129, 75, 9);
+    background-image: url(../images/fondo.jpg);
+    background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-color: rgba(20, 20, 18, 0.7);background-blend-mode: lighten;
+    margin: 0px;
+    padding: 0px;
+}
+body h1{
+    color: crimson;
+}
+#principal{
+    height: 80vh;
+    width: 50%;
     
-    /*background-color:beige;*/
-	background-image: url(../images/legologo.png);
-	/*background-repeat:no-repeat;background-size:cover;background-attachment:fixed;*/background-color: rgba(245,245,220,0.9);background-blend-mode: lighten;
-    width: 75%;
+    margin: 0 auto;
+    background-color:rgba(245, 232, 232, 0.727);
+	
+	/*background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-color: rgba(245,245,220,0.9);background-blend-mode: lighten;*/
+    
+}
+#parrafo{
+    float:right;
+}
+#formulario{
+    margin-left: 90px;
     float: left;
-    
 }
 .secundario h1{
     margin-block-start: -0;

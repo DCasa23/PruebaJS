@@ -13,29 +13,33 @@
     </p>
         
     </h1>
-    <form name="formulario" method="post">
-        <label for="fname">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="" maxlength="20"><br><br>
-        <label for="fname">Apellidos:</label><br>
-        <input type="text" id="apellidos" name="apellidos" placeholder="" maxlength="30"><br><br>
-        <label for="fname">Correo:</label><br>
-        <input type="text" id="correo" name="correo" placeholder=""><br><br>
-        <label for="fname">Telefono:</label><br>
-        <input type="number" id="telefono" name="telefono" placeholder=""><br><br>
-        <label for="fname">DNI:</label><br>
-        <input type="text" id="dni" name="dni" placeholder=""><br><br>
-        <label for="fname">IBAN:</label><br>
-        <input type="text" id="iban" name="iban" placeholder=""><br><br>
-        <label for="fname">Swift</label><br>
-        <input type="text" id="swift" name="swift" placeholder="Introducir el IBAN" maxlength="0" ><br><br>
-        <label for="fname">Nombre de Usuario:</label><br>
-        <input type="text" id="usuario" name="usuario" placeholder=""><br><br>
-        <label for="fname">Fecha de Nacimiento:</label><br>
-        <input type="date" id="fecha" name="fecha" placeholder="" min="1920-01-01" max="2021-12-31" ><br><br>
-        <input type="submit" placeholder="Submit">
-
+<div id="principal">
+    <form id="formulario" name="formulario" method="get">
+        <label for="NOMBRE">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="" style= "width:250px" maxlength="20">
+        <br><br><label for="APELLIDO">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" placeholder="" style= "width:250px" maxlength="30">
+        <br><br><label for="CORREO">Correo:</label><br>
+        <input type="text" id="correo" name="correo" style= "width:250px" placeholder="">
+        <br><br><label for="TELEFONO">Telefono:</label><br>
+        <input type="number" id="telefono" name="telefono" style= "width:250px" placeholder="XXX-XXX-XXX o XXX-XX-XX-XX">
+        <br><br><label for="DNI">DNI:</label><br>
+        <input type="text" id="dni" name="dni" style= "width:250px" placeholder="">
+        <br><br><label for="IBAN">IBAN:</label><br>
+        <input type="text" id="iban" name="iban" style= "width:250px" placeholder="">
+        <br><br><label for="SWIFT"  id="swift2">Swift</label><br>
+        <input type="text" onclick="cambiarSWIFT(this)"id="swift" name="swift" style= "width:250px" placeholder="Introducir el IBAN" maxlength="0" >
+        <br><br><label for="USER">Nombre de Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" style= "width:250px" placeholder="">
+        <br><br><label for="DATE">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" style= "width:250px"placeholder="" min="1920-01-01" max="2021-12-31" >
+        <br><br><input type="submit" placeholder="Submit"><br><br>
+        
+        
     </form>
-    
+    <p id="parrafo"></p>
+</div>
+
     <!--<button id="btn" on onclick="myFirstFunction()" onmouseover="mySecondFunction()">My first button</button>
     
     <div id="my_div" class="div_especial"></div>
@@ -46,18 +50,6 @@
     
     </script>
 
-    <h2>hola</h2>
-    <h3>adios</h3>
-    
-
-    </script>
-    
-    <div id="otro"></div>
-    <p></p>
-    
-
-    <h1>Esto moola</h1>
-    <h2>HOla a todos</h2>
     
 </body>
 </html>
