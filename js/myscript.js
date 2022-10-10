@@ -90,6 +90,11 @@ formulario.addEventListener("submit", e => {
         warnings += ' El Usuario no es valido <br><br>'
         incorrecto = true
     }
+    console.log(fecha.value.substring(0,4))
+    if(fecha.value.substring(0,4)>2004||fecha.value.substring(0,4)==""){
+        warnings += ' La fecha no es valida o es menor de 18 años<br><br>'
+        incorrecto = true
+    }
     if (incorrecto) {
         document.getElementById("parrafo").innerHTML = warnings;
 
