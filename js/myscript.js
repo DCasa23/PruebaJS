@@ -58,32 +58,36 @@ formulario.addEventListener("submit", e => {
     }
     if (apellidos.value.length < 5) {
         //alert("Completa el campo nombre");
-        warnings += ' Los apellidos no es valido <br>'
+        warnings += ' Los apellidos no son validos <br>'
         incorrecto = true
     }
-    if (usuario.value.length < 1) {
-        //alert("Completa el campo nombre");
-        warnings += ' El Usuario no es valido <br>'
-        incorrecto = true
-    }
+    
     console.log(regexEmail.test(correo.value))
     if (!regexEmail.test(correo.value)) {
         warnings += ' El email no es valido <br>'
         incorrecto = true
     }
-    console.log(regexIBAN.test(iban.value))
-    if (!regexIBAN.test(iban.value)) {
-        warnings += ' El IBAN no es valido <br>'
+    console.log(regexMOVIL.test(telefono.value))
+    if (!regexMOVIL.test(telefono.value)) {
+        warnings += ' El Telefono no es valido el formato introducido <br>'
         incorrecto = true
     }
+
     console.log(regexDNI.test(dni.value))
     if (!regexDNI.test(dni.value)) {
         warnings += ' El DNI no es valido <br>'
         incorrecto = true
     }
-    console.log(regexMOVIL.test(telefono.value))
-    if (!regexMOVIL.test(telefono.value)) {
-        warnings += ' El Telefono no es valido el formato introducido <br>'
+    
+    console.log(regexIBAN.test(iban.value))
+    if (!regexIBAN.test(iban.value)) {
+        warnings += ' El IBAN no es valido <br>'
+        incorrecto = true
+    }
+    
+    if (usuario.value.length < 1) {
+        //alert("Completa el campo nombre");
+        warnings += ' El Usuario no es valido <br>'
         incorrecto = true
     }
     if (incorrecto) {
