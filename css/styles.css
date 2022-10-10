@@ -15,6 +15,14 @@ body{
     
     
 }
+#cabeceraizq{
+    float:left;
+    width: 98px;
+}
+#cabeceraderecha{
+    float:right;
+    width: 174px;
+}
 .cabecera h1{
     position: relative;
     margin-block-start: 0px;
