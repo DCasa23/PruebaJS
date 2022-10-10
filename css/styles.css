@@ -21,14 +21,15 @@ body{
 .cabecera{
     margin-top: 5px;
     margin-bottom: 5px;
-    background-color:rgba(105, 105, 105, 0.673);
+    background-color:rgba(105, 105, 105, 0.837);
 }
 #principal{
+    padding-top: 10px;
     height: 80vh;
     width: 50%;
     
     margin: 0 auto;
-    background-color:rgba(245, 232, 232, 0.789);
+    background-color:rgba(245, 232, 232, 0.921);
 	
 	/*background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-color: rgba(245,245,220,0.9);background-blend-mode: lighten;*/
     
@@ -40,31 +41,4 @@ body{
 #formulario{
     margin-left: 90px;
     float: left;
-}
-.secundario h1{
-    margin-block-start: -0;
-}
-.secundario{
-    background-image: url(../images/cochecito.jfif);
-	background-size:contain;background-color: rgba(245,245,220,0.9); background-blend-mode: lighten;
-    height: 100vh;
-    margin-block-start: -0;
-    width: 25%;
-    float: right;
-    
-}
-.secundario li{
-   list-style: none;
-}
-#primeralinea{
-    font-style: italic;
-}
-#segundalinea{
-    font-weight:bold;
-	text-decoration:underline black;;
-}
-#fotohola{
-    width:150px
-	
-
 }

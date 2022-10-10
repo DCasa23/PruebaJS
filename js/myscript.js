@@ -42,6 +42,7 @@ formulario.addEventListener("submit", e => {
     
     e.preventDefault()
     let warnings = ""
+    document.getElementById("parrafo").innerHTML = "";
     let incorrecto = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     let regexIBAN = /^(ES\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{2}[ ]\d{10})|(ES\d{22})$/
@@ -89,10 +90,16 @@ formulario.addEventListener("submit", e => {
         document.getElementById("parrafo").innerHTML = warnings;
 
     }
-    formulario.reset()
+    
+    
+    
     if (warnings.length==0){
         alert(' Has enviado correctamente los datos.\n\nRecibiras un correo de confirmación en pocos minutos ')
+        formulario.reset()
+        swift.placeholder = "Clicka aquí al introducir el IBAN"
+        warnings=""
     }
+    
     
 });
 /*function validar(){

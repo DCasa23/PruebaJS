@@ -18,9 +18,9 @@
 <div id="principal">
     <form id="formulario" name="formulario" method="get">
         <label for="NOMBRE">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" placeholder="" style= "width:250px" maxlength="20">
+        <input type="text" id="nombre" name="nombre" placeholder="" autocomplete="off" style= "width:250px" maxlength="20">
         <br><br><label for="APELLIDO">Apellidos:</label><br>
-        <input type="text" id="apellidos" name="apellidos" placeholder="" style= "width:250px" maxlength="30">
+        <input type="text" id="apellidos" name="apellidos" placeholder="" autocomplete="off" style= "width:250px" maxlength="30">
         <br><br><label for="CORREO">Correo:</label><br>
         <input type="text" id="correo" name="correo" style= "width:250px" placeholder="">
         <br><br><label for="TELEFONO">Telefono:</label><br>
@@ -30,7 +30,7 @@
         <br><br><label for="IBAN">IBAN:</label><br>
         <input type="text" id="iban" name="iban" style= "width:250px" placeholder="ESXX-XXXX-XXXX-XX-XXXXXXXXXX">
         <br><br><label for="SWIFT"  id="swift2">Swift</label><br>
-        <input type="text" onclick="cambiarSWIFT(this)"id="swift" name="swift" style= "width:250px" placeholder="Clicka aquí al introducir el IBAN" maxlength="0" >
+        <input type="text" onclick="cambiarSWIFT(this)"id="swift" name="swift" autocomplete="off" style= "width:250px" placeholder="Clicka aquí al introducir el IBAN" maxlength="0" >
         <br><br><label for="USER">Nombre de Usuario:</label><br>
         <input type="text" id="usuario" name="usuario" style= "width:250px" placeholder="">
         <br><br><label for="DATE">Fecha de Nacimiento:</label><br>
@@ -42,12 +42,7 @@
     <p id="parrafo"></p>
 </div>
 
-    <!--<button id="btn" on onclick="myFirstFunction()" onmouseover="mySecondFunction()">My first button</button>
     
-    <div id="my_div" class="div_especial"></div>
-    <div id="my_second_div"></div>
-    <div id="my_third_div" class="div_especial"></div>
-    -->
     <script src="js/myscript.js">
     
     </script>
