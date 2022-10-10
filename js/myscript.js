@@ -52,42 +52,42 @@ formulario.addEventListener("submit", e => {
 
     if (nombre.value.length < 1) {
         //alert("Completa el campo nombre");
-        warnings += ' El nombre no es valido <br>'
+        warnings += ' El nombre no es valido <br><br>'
         incorrecto = true
 
     }
     if (apellidos.value.length < 5) {
         //alert("Completa el campo nombre");
-        warnings += ' Los apellidos no son validos <br>'
+        warnings += ' Los apellidos no son validos <br><br>'
         incorrecto = true
     }
     
     console.log(regexEmail.test(correo.value))
     if (!regexEmail.test(correo.value)) {
-        warnings += ' El email no es valido <br>'
+        warnings += ' El email no es valido <br><br>'
         incorrecto = true
     }
     console.log(regexMOVIL.test(telefono.value))
     if (!regexMOVIL.test(telefono.value)) {
-        warnings += ' El Telefono no es valido el formato introducido <br>'
+        warnings += ' El Telefono no es valido <br><br>'
         incorrecto = true
     }
 
     console.log(regexDNI.test(dni.value))
     if (!regexDNI.test(dni.value)) {
-        warnings += ' El DNI no es valido <br>'
+        warnings += ' El DNI no es valido <br><br>'
         incorrecto = true
     }
     
     console.log(regexIBAN.test(iban.value))
     if (!regexIBAN.test(iban.value)) {
-        warnings += ' El IBAN no es valido <br>'
+        warnings += ' El IBAN no es valido <br><br>'
         incorrecto = true
     }
     
     if (usuario.value.length < 1) {
         //alert("Completa el campo nombre");
-        warnings += ' El Usuario no es valido <br>'
+        warnings += ' El Usuario no es valido <br><br>'
         incorrecto = true
     }
     if (incorrecto) {
@@ -96,9 +96,8 @@ formulario.addEventListener("submit", e => {
     }
     
     
-    
     if (warnings.length==0){
-        alert(' Has enviado correctamente los datos.\n\nRecibiras un correo de confirmación en pocos minutos ')
+        alert(' Has enviado correctamente los datos.\n\nRecibiras un correo de confirmación en pocos minutos. ')
         formulario.reset()
         swift.placeholder = "Clicka aquí al introducir el IBAN"
         warnings=""
