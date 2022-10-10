@@ -9,25 +9,32 @@
 body{
     height: 100vh;
     background-color: rgb(129, 75, 9);
-    background-image: url(../images/fondo.jpg);
-    background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-color: rgba(20, 20, 18, 0.7);background-blend-mode: lighten;
+    background-image: url(../images/fondo2.gif);
+    background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-image: rgba(9, 9, 8, 0.9);background-blend-mode: lighten;
     margin: 0px;
     padding: 0px;
 }
-body h1{
-    color: crimson;
+.cabecera h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(136, 9, 34);
+}
+.cabecera{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color:rgba(105, 105, 105, 0.673);
 }
 #principal{
     height: 80vh;
     width: 50%;
     
     margin: 0 auto;
-    background-color:rgba(245, 232, 232, 0.727);
+    background-color:rgba(245, 232, 232, 0.789);
 	
 	/*background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-color: rgba(245,245,220,0.9);background-blend-mode: lighten;*/
     
 }
 #parrafo{
+    margin-right: 10px;
     float:right;
 }
 #formulario{

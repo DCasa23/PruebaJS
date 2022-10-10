@@ -39,11 +39,12 @@ var validar = function (e) {
 
 
 formulario.addEventListener("submit", e => {
+    
     e.preventDefault()
     let warnings = ""
     let incorrecto = false
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
-    let regexIBAN = /^(ES\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4}[ ]\d{4})|(ES\d{22})$/
+    let regexIBAN = /^(ES\d{2}[ ]\d{4}[ ]\d{4}[ ]\d{2}[ ]\d{10})|(ES\d{22})$/
     let regexDNI = /^(\d{8})([A-z])$/;
     let regexMOVIL = /^(\d{3}[ ]\d{3}[ ]\d{3})|(\d{3}[ ]\d{2}[ ]\d{2}[ ]\d{2})$/
 
@@ -56,7 +57,7 @@ formulario.addEventListener("submit", e => {
     }
     if (apellidos.value.length < 5) {
         //alert("Completa el campo nombre");
-        warnings += ' El Usuario no es valido <br>'
+        warnings += ' Los apellidos no es valido <br>'
         incorrecto = true
     }
     if (usuario.value.length < 1) {
@@ -84,14 +85,24 @@ formulario.addEventListener("submit", e => {
         warnings += ' El Telefono no es valido el formato introducido <br>'
         incorrecto = true
     }
-    if(incorrecto){
-                document.getElementById("parrafo").innerHTML = warnings;
-            
-        }
-    
+    if (incorrecto) {
+        document.getElementById("parrafo").innerHTML = warnings;
+
+    }
+    formulario.reset()
+    if (warnings.length==0){
+        alert(' Has enviado correctamente los datos.\n\nRecibiras un correo de confirmación en pocos minutos ')
+    }
     
 });
+/*function validar(){
+    formulario.reset()
+    if (parrafo.length==0){
+        alert(' Has enviado correctamente los datos.<br><br>Recibiras un correo de confirmación en pocos minutos ')
+    }
 
+    
+}*/
 function cambiarSWIFT(swift) {
     swift.placeholder = getBICBank(iban.value.substring(5, 9));
 
