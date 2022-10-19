@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/favicon.png" type="image/png"/>
-<link rel="stylesheet" type="text/css" href="css/styles.css"/>
-    <title>Lego Enterprise</title>
+    <link rel="icon" href="images/favicon.jpg" type="image/png"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <title>Formulario Inscripción Fornite</title>
 </head>
 <body>
-    <section class="principal">
-		<a href="../index.html"><img class="cabecera" alt="Escudo de armas" src="images/legologo.png"></a>
-		<h1><a href="../index.html">Lego Enterprise </a></h1>
-		<p id="primeralinea">Somos tu empresa,pensamos en el futuro...SI</p>
-        <p id="segundalinea">Dejanos que tus hijos sean el mejor futuro.</p>
-		<a href="html/novedades.html"><img id="fotohola"  alt="harry" src="images/hola.jpg"></a>
-	</section>
-    <!--The menu bar starts here-->
-	<section class="secundario">
-		<h1>Accesos directos</h1>
-		<ul>
-			<li><a href="html/productos.html">Productos</a></li>
-			<li><a href="html/novedades.html">Novedades</a></li>
-			<li><a href="html/fundacion.html">Fundación</a></li>
-			<li><a href="html/contacto.html">Contacto</a></li>
-			<li><a href="images/legologo.png">Nuestro logo</a></li>
-		</ul>
-		
-	</section>
+<div class="cabecera">  
+    <img id="cabeceraizq" src="images/favicon.jpg" alt="Fortnite España">    
+    <img id="cabeceraderecha" src="images/cabeceraderecha.jpg" alt="Campeonato Mundial">    
+    <h1>Bienvenido al Formulario de Inscripción para el Campeonato Nacional</h1>
+    <p> Por favor, introduzca todos los datos requeridos.
+    </p>
+        
+    </h1>
+</div>
+<img id="fotoizquierda" src="images/izquierda.jpg" alt="Campeonato Movistar">    
+<img id="fotoderecha" src="images/derecha.jpg" alt="Campeonato">    
+<div id="principal">
+    
+    <form id="formulario" name="formulario" method="post">
+        <label for="NOMBRE">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="" autocomplete="off" style= "width:250px" maxlength="20">
+        <br><br><label for="APELLIDO">Apellidos:</label><br>
+        <input type="text" id="apellidos" name="apellidos" placeholder="" autocomplete="off" style= "width:250px" maxlength="30">
+        <br><br><label for="CORREO">Correo:</label><br>
+        <input type="text" id="correo" name="correo" style= "width:250px" placeholder="">
+        <br><br><label for="TELEFONO">Telefono:</label><br>
+        <input type="text" id="telefono" name="telefono" style= "width:250px" placeholder="XXX-XXX-XXX o XXX-XX-XX-XX">
+        <br><br><label for="DNI">DNI:</label><br>
+        <input type="text" id="dni" name="dni" style= "width:250px" placeholder="">
+        <br><br><label for="IBAN">IBAN:</label><br>
+        <input type="text" id="iban" name="iban" style= "width:250px" placeholder="ESXX-XXXX-XXXX-XX-XXXXXXXXXX">
+        <br><br><label for="SWIFT"  id="swift2">Swift</label><br>
+        <input type="text" onclick="cambiarSWIFT(this)"id="swift" name="swift" autocomplete="off" style= "width:250px" placeholder="Clicka aquí al introducir el IBAN" maxlength="0" >
+        <br><br><label for="USER">Nombre de Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" style= "width:250px" placeholder="">
+        <br><br><label for="DATE">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fecha" name="fecha" style= "width:250px"placeholder="" min="1920-01-01" max="2021-12-31" >
+        <br><br><input type="submit" placeholder="Submit"><br><br>
+        
+        
+    </form>
+    <p id="parrafo"></p>
+</div>
+
+    
+    <script src="js/myscript.js">
+    
+    </script>
+
+    
 </body>
 </html>
