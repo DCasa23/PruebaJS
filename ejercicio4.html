@@ -1,0 +1,188 @@
+<!--
+<html>
+    <body>
+    <input	type="text"	id="nombre"	onblur="obTxtNombre()">
+    <script	type="text/javascript"> function	obTxtNombre()	{
+    var	x=document.getElementById("nombre");
+    x.value	=x.value.toUpperCase();
+    }
+    </script>
+    </body>
+    </html>
+-->
+    
+ <!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example demonstrates how to assign an "onchange" event to an input element.</p>
+
+Enter your name: <input type="text" id="fname" onchange="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+<p>Introuduzca un	valor	superior	a	0:</p>
+<form	action="#"	method="get">
+<input	type="text"	name="dato"	onchange="validar(this)"/>
+</form>
+<script>
+function myFunction() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+function validar(obj){
+    console.log(obj);
+    
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter your name: <input type="text" onfocus="myFunction(this)" onblur="myFunction2(this)" onfocusout="myFunction3(this)">
+
+Enter your name: <input type="text" onfocus="myFunction(this)" onblur="myFunction2(this)" onfocusout="myFunction3(this)">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+<script>
+function myFunction(x) {
+  x.style.background = "yellow";
+}
+function myFunction2(x) {
+  x.style.background = "white";
+}
+function myFunction3(x) {
+  x.style.background = "red";
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>A function is triggered when the user is pressing a key in the input field.</p>
+
+<input type="text" onkeydown="myFunction()">
+
+<script>
+function myFunction() {
+  alert("You pressed a key inside the input field");
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+
+<input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+
+<script>
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
+
+function keyupFunction() {
+  document.getElementById("demo").style.backgroundColor = "green";
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+
+<input type="text" id="demo" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+
+<script>
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
+
+function keyupFunction() {
+  document.getElementById("demo").style.backgroundColor = "green";
+}
+</script>
+
+</body>
+</html>
+
+<input onkeydown="teclaPulsada(event)" /> 
+//Lo primero que hacemos es incluir la variable event en el evento OnKeyDown. Esto sirve para que en el momento en que el evento se ejecute, este pueda tener acceso a la información respectiva a la tecla. 
+¡¡EVENT LO VEREMOS EN LAS SIGUIENTES DIAPOSITIVAS!!
+        <script>
+            function teclaPulsada(event) {
+                const key = event.key; // "A", "1", "Enter", "ArrowRight"...La propiedad de solo lectura KeyboardEvent.key retorna el valor de la tecla presionada por el usuario. EN LAS SIGUIENTES DIAPOSITIVAS!
+                console.log("La tecla pulsada es: " + key);
+                alert("La tecla pulsada es: " + key);
+            }
+        </script>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+
+<input type="text" id="demo" onmousedown="keydownFunction()" onmouseup="keyupFunction2()">
+
+<script>
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
+
+function keyupFunction2() {
+  document.getElementById("demo").style.backgroundColor = "green";
+}
+</script>
+
+</body>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press and hold down a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+
+<input type="text" id="demo" onmousemove="keydownFunction()" onmousedown="bigImg(this)" onmousewheel="keyupFunction2()" width="100px">
+
+<script>
+function keydownFunction() {
+  document.getElementById("demo").style.backgroundColor = "red";
+}
+function bigImg(x) {
+  
+  x.style.width = "150px";
+}
+function keyupFunction2() {
+  document.getElementById("demo").style.backgroundColor = "green";
+}
+</script>
+
+</body>
+</html>
