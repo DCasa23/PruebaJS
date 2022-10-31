@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>div {width: 200px;height: 100px;border: 1px solid black;}</style>
+</head>
+<body>
+    <!--
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+    <p>Mouse over the rectangle above, and get the coordinates of your mouse pointer.</p>
+    <p id="demo"></p>
+    -->    
+    <script>
+        /*
+        function myFunction(e) {
+            var x = e.clientX;
+            var y = e.clientY;
+            var coor = "Coordinates: (" + x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor;
+        }
+        function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+
+
+   
+    var horaformatoGMT = new Date().toUTCString();
+    var ruta="/inicio";
+    var nombreDominio= "miweb.com"
+    document.cookie = "nombreCookie=datosCookie[; expires=horaformatoGMT][; path=ruta][; domain=nombreDominio][; secure]";
+  */  
+
+  
+
+function getCookie(name) {
+            const value = `; ${document.cookie}`;
+            const parts = value.split(`; ${name}=`);
+            if (parts.length === 2) return parts.pop().split(';').shift();
+        }
+
+
+    console.log(getCookie("usuario"));
+    document.cookie="nombre=oeschger";
+    document.cookie="usuario=Rodolfo";
+    document.cookie="usuario=Guillermo";
+    document.cookie="expires=Mon, 25 May 2012 11:12:13 UTC";
+    const date1= new Date('December 17, 1995 03:24:00');
+    var expirar= ";expires="+date1.toGMTString();
+    /*
+    expires="Mon, 25 May 2012 11:12:13 UTC";
+    var expirar= "; expires="+date.toGMTString()";
+    */
+    document.cookie="comida-preferida-tripa";
+    console.log(document.cookie);
+    console.log(expirar);
+    console.log(document.cookie.replace("; expires=Mon, 25 May 2012 11:12:13 UTC",expirar));
+    localStorage.setItem('usuario','')
+    
+   </script> 
+
+
+
+
+</body>
+</html>

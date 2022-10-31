@@ -1,0 +1,13 @@
+
+// Creamos un objeto
+var object = { 'uno' : '1', 'dos' : '2', 'nombre': 'daniel' };
+// Lo guardamos en localStorage, pasándolo a cadena con JSON
+localStorage.setItem('key', JSON.stringify(object));
+// Creamos una nueva variable object2 con el valor obtenido de localStorage usando JSON recuperar el objeto inicial
+var object2 = JSON.parse(localStorage.getItem('key'));
+alert(object2.uno); // La alerta mostrará 1 por pantalla
+alert(object2.dos); // La alerta mostrará 2 por pantalla
+alert(object2.nombre); // La alerta mostrará ‘daniel’ por pantalla
+
+
+
